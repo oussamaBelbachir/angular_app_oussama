@@ -1,0 +1,81 @@
+.products {
+  margin-top: 40px;
+
+  & .search{
+    display: block;
+    width: 95%;
+
+    padding: 7px 10px;
+    border-radius: 5px;
+    border: 1px solid #999;
+    margin: 10px auto 30px;
+
+  }
+  & .item {
+    display: flex;
+    margin: 10px 0;
+    // background-color: #e3f5ff;
+    padding: 3px 20px;
+    width: 500px;
+
+    & > * {
+      margin-right: 20px;
+    }
+
+    & .id {
+      font-weight: bold;
+    }
+    & .name {
+      width: 200px;
+    }
+    & .price {
+      width: 70px;
+    }
+    & .icons {
+      width: 25px;
+      height: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 13px;
+      background-color: #efefef;
+    }
+  }
+
+  & .pagination{
+    //background: red;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+
+    & .page{
+      width: 30px;
+      height: 30px;
+      margin: 0 7px;
+      //background: #999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      border-radius: 3px;
+      border: 1px solid #286cff;
+      color: #286cff;
+      font-weight: bold;
+      transition: all .3s ease-in-out;
+
+      &.active{
+        background: #286cff;
+        color: #fff;
+      }
+
+      &:hover{
+        background: #286cff;
+        color: #fff;
+      }
+    }
+  }
+}

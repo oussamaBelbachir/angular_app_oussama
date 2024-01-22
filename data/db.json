@@ -1,0 +1,103 @@
+{
+  "users": [
+    {
+      "id": "user1",
+      "password": "MTIzNA==",
+      "roles": [
+        "USER"
+      ],
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyMSIsImlhdCI6MTUxNjIzOTAyMiwiZXhwIjoxNTE2MjM5MDIyLCJpc3MiOiJodHRwLy9sb2NhbGhvc3Q6ODg4OC9hdXRoIiwibmJyIjoxNTE2MjM5MDIyLCJmaXJzdG5hbWUiOiJPdXNzYW1hIiwibGFzdG5hbWUiOiJCZWxiYWNoaXIiLCJlbWFpbCI6Im91c3NAZ21haWwuY29tIiwicm9sZXMiOlsiVVNFUiJdfQ.w3rZUwMJrcW6nu5KzC-_JLz2gOS_5Oxo29SJtavNhDk"
+    },
+    {
+      "id": "user2",
+      "password": "MTIzNA==",
+      "roles": [
+        "USER"
+      ],
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyMiIsImlhdCI6MTUxNjIzOTAyMiwiZXhwIjoxNTE2MjM5MDIyLCJpc3MiOiJodHRwLy9sb2NhbGhvc3Q6ODg4OC9hdXRoIiwibmJyIjoxNTE2MjM5MDIyLCJmaXJzdG5hbWUiOiJPdXNzYW1hIiwibGFzdG5hbWUiOiJCZWxiYWNoaXIiLCJlbWFpbCI6Im91c3NAZ21haWwuY29tIiwicm9sZXMiOlsiVVNFUiJdfQ.QCAZN70nVW0Alf5KpJdCPPLH2o4_24AaSEo-YwRujpI"
+    },
+    {
+      "id": "admin",
+      "password": "MTIzNA==",
+      "roles": [
+        "USER",
+        "ADMIN"
+      ],
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTUxNjIzOTAyMiwiZXhwIjoxNTE2MjM5MDIyLCJpc3MiOiJodHRwLy9sb2NhbGhvc3Q6ODg4OC9hdXRoIiwibmJyIjoxNTE2MjM5MDIyLCJmaXJzdG5hbWUiOiJPdXNzYW1hIiwibGFzdG5hbWUiOiJCZWxiYWNoaXIiLCJlbWFpbCI6Im91c3NAZ21haWwuY29tIiwicm9sZXMiOlsiVVNFUiIsIkFETUlOIl19.wY350vyoVLkRywEEk9NN32WGQJXBvRAgQ6CijmOhHvA"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Pc_0",
+      "price": 1999,
+      "checked": true
+    },
+    {
+      "id": 2,
+      "name": "Iphone 15 pro max",
+      "price": 2300,
+      "checked": false
+    },
+    {
+      "name": "iphone 16",
+      "price": 3500,
+      "checked": true,
+      "id": 5
+    },
+    {
+      "name": "nort-est",
+      "price": 50,
+      "checked": true,
+      "id": 6
+    },
+    {
+      "name": "nort-est",
+      "price": 50,
+      "checked": true,
+      "id": 7
+    },
+    {
+      "name": "nort-est",
+      "price": 50,
+      "checked": true,
+      "id": 8
+    },
+    {
+      "id": 10,
+      "name": "nort-est",
+      "price": 150,
+      "checked": true
+    },
+    {
+      "name": "nort-est",
+      "price": 50,
+      "checked": true,
+      "id": 13
+    },
+    {
+      "name": "nort-est",
+      "price": 50,
+      "checked": true,
+      "id": 14
+    },
+    {
+      "name": "nort-est",
+      "price": 50,
+      "checked": true,
+      "id": 15
+    },
+    {
+      "name": "nort-est",
+      "price": 50,
+      "checked": true,
+      "id": 16
+    },
+    {
+      "name": "test test",
+      "price": 788,
+      "checked": false,
+      "id": 17
+    }
+  ]
+}

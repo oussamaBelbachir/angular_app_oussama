@@ -1,0 +1,36 @@
+<div class="products">
+
+  <div>
+    <input placeholder="search..." class="search" type="search" [(ngModel)]="appState.productState.keyword" (ngModelChange)="onKeywordChange()"/>
+  </div>
+
+  <div *ngIf="appState.productState.products.length>0; else noProducts" >
+    <div *ngFor="let p of appState.productState.products" class="item">
+      <div class="id">#{{ p.id }}</div>
+      <div class="name">{{ p.name }}</div>
+      <div class="price">{{ p.price }} $</div>
+
+      <ng-container *ngIf="appState.authState.roles.includes('ADMIN')">
+        <div class="icons" (click)="toggleChecked(p)">
+          {{ p.checked ? "✅" : "❌" }}
+        </div>
+        <div class="icons" (click)="deleteProduct(p)">🚮</div>
+        <div class="icons" [routerLink]="'/admin/editProduct/' + p.id">✏️</div>
+      </ng-container>
+
+    </div>
+  </div>
+
+  <ng-template #noProducts>
+    <div class="noData error">No products available.</div>
+  </ng-template>
+
+
+  <div class="pagination">
+    <div *ngFor="let _ of [].constructor(appState.productState.totalPages);let i=index" >
+      <div (click)="setCurrentPage(i+1)" class="page " [ngClass]="appState.productState.currentPage==(i+1) ? 'active' : ''" >
+        {{(i+1)}}
+      </div>
+    </div>
+  </div>
+</div>

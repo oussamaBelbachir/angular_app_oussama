@@ -1,0 +1,33 @@
+.login{
+  //background: red;
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  & form > *{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  & input{
+    outline: none;
+    margin: 5px 0 10px;
+    padding: 7px 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+  }
+
+  & button{
+    background: #0074ff;
+    color: #fff;
+    padding: 9px 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 100%;
+    cursor: pointer;
+  }
+}

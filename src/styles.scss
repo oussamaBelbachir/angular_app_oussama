@@ -1,1 +1,69 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  padding: 5px 20px;
+}
+
+input{
+  outline: none;
+}
+
+.noData ,.error{
+  background: #ffd7d7;
+  padding: 10px 30px;
+  text-align: center;
+  border-radius: 5px;
+  color: red;
+  font-weight: bold;
+  margin: 10px auto;
+  width: fit-content;
+}
+
+.form-product{
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+
+  & label{
+    display: block;
+  }
+
+  & label.check{
+    display: inline;
+  }
+
+  & input{
+    outline: none;
+    margin: 5px 0 10px;
+    width: 100%;
+    padding: 7px 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+
+    &[type="checkbox"] {
+      width: fit-content;
+      display: inline-block;
+      margin-left: 5px;
+    }
+  }
+
+  & button{
+    background: #0074ff;
+    color: #fff;
+    padding: 9px 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 100%;
+    cursor: pointer;
+
+    &:disabled{
+      background: #7bb6ff;
+    }
+  }
+}

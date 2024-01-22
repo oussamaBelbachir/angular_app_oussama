@@ -1,0 +1,30 @@
+<div class="menu">
+
+  <div class="items">
+    <div
+      class="item"
+      *ngFor="let ac of actions"
+      routerLink="{{ ac.route }}"
+      (click)="setCurrentAction(ac)"
+      [class]="ac === currentAction ? 'active' : ''"
+    >
+      {{ ac.title }}
+    </div>
+  </div>
+
+
+  <div class="auth">
+    <div *ngIf="appState.authState.isAuthenticated" class="username">{{appState.authState.username}}</div>
+
+    <button *ngIf="!appState.authState.isAuthenticated" (click)="login()">login</button>
+    <button *ngIf="appState.authState.isAuthenticated" (click)="logout()">logout</button>
+  </div>
+
+<!--  <div *ngIf="appState.productState.status=='LOADING'" class="spinner">-->
+<!--    <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>-->
+<!--  </div>-->
+
+  <div *ngIf="ls.isLoading$ | async" class="spinner">
+    <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+  </div>
+</div>

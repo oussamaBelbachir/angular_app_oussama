@@ -1,0 +1,25 @@
+.dashboard{
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  margin: 20px auto 0;
+  //border: 1px solid #ccc;
+  padding: 5px 10px;
+  border-radius: 5px;
+
+  & .card{
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+
+    background: #3e74ff;
+    color: #fff;
+    padding: 7px 13px;
+    border-radius: 3px;
+
+    & span{
+      display: inline-block;
+      margin-left: 5px;
+    }
+  }
+}

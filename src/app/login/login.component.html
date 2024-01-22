@@ -1,0 +1,14 @@
+<div class="login">
+
+  <div class="error" *ngIf="errorMessage!=''">{{errorMessage}}</div>
+  <div>
+    <form [formGroup]="productForm" (ngSubmit)="handleSubmit()">
+      <input formControlName="username" type="text" placeholder="Username"/>
+      <input formControlName="password" type="password" placeholder="Password"/>
+      <button type="submit">Connexion</button>
+    </form>
+  </div>
+</div>
+
+
+<!--nRusJ0LSZt9IrrCt70jijNwCttpbERn0-->
